@@ -1,0 +1,81 @@
+body {
+    background-color: #030303be;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+  }
+  
+  #click-area {
+    background-color: #000103b9;
+    color: #fff;
+    width: 800px;
+    height: 40px;
+    margin: 300px auto;
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #timer {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 270px;
+    left: 510px;
+    width: 270px;
+    font-size: 20px;
+    }
+
+
+  #click-area {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+  }
+
+  #restart-button {
+    position: absolute;
+    top: 450px;
+    left: 900px;
+    background: linear-gradient(to bottom, #fa9912, #dfac16);
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+
+    }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 75px;
+    font-size: 15px;
+  }
