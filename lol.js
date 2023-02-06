@@ -23,7 +23,7 @@ function startTimer() {
         clickArea.style.cursor = "default";
         clickArea.removeEventListener("click", updateClicks);
         const result = clicks;
-        clickArea.innerHTML = `Tu as fais ${result} clique(s) / (${result/10} CPS)`;
+        clickArea.innerHTML = `You did ${result} click(s) / (${result/10} CPS)`;
       } else {
         timeRemaining--;
         time.innerHTML = timeRemaining;

@@ -1,3 +1,4 @@
+
 body {
     background-color: #030303be;
     font-family: Arial, sans-serif;
@@ -17,6 +18,27 @@ body {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard */
+  }
+  nav {
+    position: absolute;
+    top: 5px;
+    right: 60px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    height: 50px;
+
+  
+  }
+  
+  nav select {
+    background-color: #333;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    appearance: none;
+    color: rgb(255, 255, 255);
   }
   
   #click-area {
