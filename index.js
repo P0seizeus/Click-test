@@ -57,6 +57,3 @@ languageDropdown.addEventListener("change", function() {
 
 
 
-
-
-

@@ -13,13 +13,23 @@ body {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 40px;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard */
   }
-  nav {
+  nav select {
+    background-color: #333;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    appearance: none;
+    color: rgb(255, 255, 255);
+  }
+  #language-select {
     position: absolute;
     top: 5px;
     right: 60px;
@@ -30,16 +40,138 @@ body {
 
   
   }
-  
-  nav select {
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 775px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    appearance: none;
-    color: rgb(255, 255, 255);
+    height: 50px;
   }
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .menu a:hover {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+.time-options {
+  display: none;
+}
+
+.menu .temps:hover .time-options{
+  display: block;
+position: absolute;
+}
+
+
+
+
+@media only screen and (max-width: 414px) {
+  header {
+      position: static;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  nav select {
+      font-size: 14px;
+      padding: 5px;
+  }
+  #language-select {
+      position: static;
+      top: inherit;
+      right: inherit;
+      justify-content: center;
+  }
+  .menu {
+      position: static;
+      top: inherit;
+      left: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .menu a {
+      font-size: 16px;
+      margin: 5px 0;
+  }
+  #timer {
+      position: static;
+      top: inherit;
+      left: inherit;
+      width: 80%;
+      font-size: 16px;
+      text-align: center;
+      margin: 20px auto;
+  }
+  #restart-button {
+      position: static;
+      top: inherit;
+      left: inherit;
+      width: 80%;
+      margin: 20px auto;
+  }
+  footer {
+      height: 50px;
+      font-size: 14px;
+  }
+}
+
+
+@media only screen and (max-width: 896px) {
+  #click-area {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
   
   #click-area {
     background-color: #000103b9;
