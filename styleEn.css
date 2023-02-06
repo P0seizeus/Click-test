@@ -42,17 +42,6 @@ body {
   }
 
 
-
-
-
- 
-
-
-
-
-
-
-
   .menu {
     position: absolute;
     top: 70px;
@@ -77,102 +66,35 @@ body {
     border-radius: 5px;
   }
 
+ 
 
-.time-options {
-  display: none;
-}
+  .time-options {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -23px;
+    background-color: #0303037c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+    .show {
+    display: block;
+    }
+    
+    .time-options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+    }
+    
+    .time-options a:hover {
+    background-color: #f1f1f1;
+    }
 
-.menu .temps:hover .time-options{
-  display: block;
-position: absolute;
-}
-
-
-
-
-@media only screen and (max-width: 414px) {
-  header {
-      position: static;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
-  nav select {
-      font-size: 14px;
-      padding: 5px;
-  }
-  #language-select {
-      position: static;
-      top: inherit;
-      right: inherit;
-      justify-content: center;
-  }
-  .menu {
-      position: static;
-      top: inherit;
-      left: inherit;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  .menu a {
-      font-size: 16px;
-      margin: 5px 0;
-  }
-  #timer {
-      position: static;
-      top: inherit;
-      left: inherit;
-      width: 80%;
-      font-size: 16px;
-      text-align: center;
-      margin: 20px auto;
-  }
-  #restart-button {
-      position: static;
-      top: inherit;
-      left: inherit;
-      width: 80%;
-      margin: 20px auto;
-  }
-  footer {
-      height: 50px;
-      font-size: 14px;
-  }
-}
-
-
-@media only screen and (max-width: 896px) {
-  #click-area {
-    width: 90%;
-    margin: 20px auto;
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
   #click-area {
     background-color: #000103b9;
     color: #fff;
@@ -190,9 +112,13 @@ position: absolute;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 270px;
-    left: 510px;
+    left: 475px;
     width: 270px;
     font-size: 20px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
     }
 
 
@@ -207,7 +133,7 @@ position: absolute;
     position: absolute;
     top: 450px;
     left: 900px;
-    background: linear-gradient(to bottom, #fa9912, #dfac16);
+    background: linear-gradient(to bottom, #fa9912, #c5960a);
     color: #fff;
     width: 120px;
     height: 40px;
@@ -232,4 +158,8 @@ position: absolute;
     color: #fff;
     height: 75px;
     font-size: 15px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
   }

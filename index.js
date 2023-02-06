@@ -56,4 +56,41 @@ languageDropdown.addEventListener("change", function() {
 });
 
 
+const timeLink = document.querySelector('.temps');
+const timeOptions = document.querySelector('.time-options');
+const Clickarea = document.querySelector('click-area');
+
+
+
+timeLink.addEventListener('mouseover', function() {
+timeOptions.style.display = "block";
+clickArea.style.margin = "355px auto"
+restartButton.style.top = "500px"
+timer.style.top = "330px"
+
+});
+
+timeLink.addEventListener('mouseout', function() {
+timeOptions.style.display = "none";
+clickArea.style.margin = "300px auto"
+restartButton.style.top = "450px"
+timer.style.top = "270px"
+});
+
+
+timeOptions.addEventListener('mouseover', function() {
+timeOptions.style.display = "block";
+clickArea.style.margin = "355px auto"
+restartButton.style.top = "500px"
+timer.style.top = "330px"
+});
+
+timeOptions.addEventListener('mouseout', function() {
+timeOptions.style.display = "none";
+clickArea.style.margin = "300px auto"
+restartButton.style.top = "450px"
+timer.style.top = "270px"
+
+});
+
 

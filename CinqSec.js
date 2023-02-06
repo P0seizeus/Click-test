@@ -6,7 +6,7 @@ const counter = document.getElementById("counter");
 const count = document.getElementById("count");
 
 let clicks = 0;
-let timeRemaining = 10;
+let timeRemaining = 5;
 let intervalId;
 
 clickArea.addEventListener("click", updateClicks);
@@ -23,7 +23,7 @@ function startTimer() {
         clickArea.style.cursor = "default";
         clickArea.removeEventListener("click", updateClicks);
         const result = clicks;
-        clickArea.innerHTML = `You did ${result} click(s) / (${result/10} CPS)`;
+        clickArea.innerHTML = `Tu as fais ${result} clique(s) / (${result/5} CPS)`;
       } else {
         timeRemaining--;
         time.innerHTML = timeRemaining;
@@ -45,10 +45,10 @@ languageDropdown.addEventListener("change", function() {
   const selectedLanguage = this.value;
   switch (selectedLanguage) {
     case "en":
-      window.location.href = "english.html";
+      window.location.href = "CinqSecEN.html";
       break;
     case "fr":
-      window.location.href = "index.html";
+      window.location.href = "CinqSec.html";
       break;
     default:
       break;
