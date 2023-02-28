@@ -47,10 +47,10 @@ languageDropdown.addEventListener("change", function() {
   const selectedLanguage = this.value;
   switch (selectedLanguage) {
     case "en":
-      window.location.href = "UneSecEN.html";
+      window.location.href = "CinqSecEN.html";
       break;
     case "fr":
-      window.location.href = "UneSec.html";
+      window.location.href = "CinqSec.html";
       break;
     default:
       break;

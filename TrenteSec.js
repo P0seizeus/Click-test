@@ -6,7 +6,7 @@ const counter = document.getElementById("counter");
 const count = document.getElementById("count");
 
 let clicks = 0;
-let timeRemaining = 5;
+let timeRemaining = 30;
 let intervalId;
 
 clickArea.addEventListener("click", updateClicks);
